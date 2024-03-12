@@ -56,12 +56,12 @@ public class Libro {
         this.autor = autor;
     }
 
-    public int getPublicaciòn() {
+    public int getPublicacion() {
         return publicacion;
     }
 
-    public void setPublicaciòn(int publicaciòn) {
-        this.publicacion = publicaciòn;
+    public void setPublicacion(int publicacion) {
+        this.publicacion = publicacion;
     }
 
     public String getGenero() {
@@ -79,4 +79,14 @@ public class Libro {
     public void setCantDePaginas(int cantDePaginas) {
         this.cantDePaginas = cantDePaginas;
     }
+
+    public void modificaPublicacion(Libro libro)
+    {
+        Scanner scan = new Scanner(System.in);
+        int publicacion = 0;
+        System.out.println("INGRESE NUEVA FECHA DE PUBLICACION \n");
+        publicacion = scan.nextInt();
+        libro.setPublicacion(publicacion);
+    }
 }
+
